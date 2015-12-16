@@ -21,4 +21,5 @@ depth-reader.js: I use it to parse depth file. From https://github.com/DavisReef
 png.js: I use it to decode png image. From https://github.com/arian/pngjs<br>
 decoder.js: I use it to decode jpeg image. From https://github.com/eugeneware/jpeg-js<br>
 ###Status
-Have problem display html marks --fixed 2015/12/14
+Have problem display html marks		--fixed 2015/12/14
+Can't Parse xdm written by sdk R5	--fixed 2015/12/16
