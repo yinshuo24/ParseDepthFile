@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Xdmparser : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Xdmparser</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yinshuo24/XDMParser">View on GitHub</a>
+
+          <h1 id="project_title">Xdmparser</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yinshuo24/XDMParser/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yinshuo24/XDMParser/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="parsedepthfile" class="anchor" href="#parsedepthfile" aria-hidden="true"><span class="octicon octicon-link"></span></a>ParseDepthFile</h1>
+
+<h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>load and parse XDM format depth file.<br>
+It read the reference image and depth image embedded in the depth file and draw them on the screen.
+It also reads other attributes of depth file and print them out.<br>
+For more information on XDM specification, you can refer to <a href="https://software.intel.com/en-us/articles/the-extensible-device-metadata-xdm-specification-version-10">https://software.intel.com/en-us/articles/the-extensible-device-metadata-xdm-specification-version-10</a><br>
+Here I use <code>material-ui</code> to beautify the interface. For more information about <code>material-ui</code>, please refer 
+to their website <a href="http://www.material-ui.com/#/">http://www.material-ui.com/#/</a><br></p>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<ol>
+<li>Install material-ui following <a href="http://www.material-ui.com/#/get-started/installation">http://www.material-ui.com/#/get-started/installation</a><br>
+</li>
+<li>Install browserify: <code>npm install -g browserify</code><br>
+</li>
+<li>Install jsx support: <code>npm install --save babelify babel-preset-react</code>
+</li>
+<li>build bundle: <code>browserify -t [ babelify --presets [ react ] ] main.js -o bundle.js</code>
+</li>
+</ol>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>open index.html in google chrome. it doesn't work in firefox.<br>
+Because I use TypedArray.prototype.slice whcih is not support in firefox, at least in my firefox.</p>
+
+<h2>
+<a id="acknowledge" class="anchor" href="#acknowledge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acknowledge</h2>
+
+<p>I used and modified three js libraries written by others.<br>
+depth-reader.js: I use it to parse depth file. From <a href="https://github.com/DavisReef/depth-reader-js">https://github.com/DavisReef/depth-reader-js</a><br>
+png.js: I use it to decode png image. From <a href="https://github.com/arian/pngjs">https://github.com/arian/pngjs</a><br>
+decoder.js: I use it to decode jpeg image. From <a href="https://github.com/eugeneware/jpeg-js">https://github.com/eugeneware/jpeg-js</a><br></p>
+
+<h3>
+<a id="status" class="anchor" href="#status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Status</h3>
+
+<p>Have problem display html marks     --fixed 2015/12/14<br>
+Can't Parse xdm written by sdk R5   --fixed 2015/12/16<br></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Xdmparser maintained by <a href="https://github.com/yinshuo24">yinshuo24</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
