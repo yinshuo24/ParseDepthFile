@@ -13,7 +13,7 @@ to their website http://www.material-ui.com/#/<br />
 4. build bundle: `browserify -t [ babelify --presets [ react ] ] main.js -o bundle.js`
 
 ##Usage
-open http://localhost/path-to-index.html in google chrome. it doesn't work in firefox.<br>
+open `http://localhost/path-to-index.html` in google chrome. it doesn't work in firefox.<br>
 Because I use TypedArray.prototype.slice whcih is not support in firefox, at least in my firefox.
 ##Acknowledge
 I used and modified three js libraries written by others.<br>
